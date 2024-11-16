@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Management</title>
+  <style>
+    
+    
+    body {
+      font-family:'Times New Roman', Times, serif
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #333;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: #666;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #333;
+    }
+
+    .hero {
+      background-image: url(DALL·E\ 2024-11-16\ 16.44.39\ -\ A\ luxurious\ outdoor\ event\ setup\ for\ an\ elegant\ evening\ celebration.\ The\ space\ features\ beautifully\ decorated\ round\ tables\ with\ crisp\ white\ linens\,\ gol.webp);
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 12px 100px;
+      border-radius: 4px;
+      
+      
+    }
+    .btn1{
+      display: inline-block;
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 500;
+      padding: 12px 100px;
+      border-radius: 4px;
+    }
+
+    .btn:hover {
+      background-color: #555;
+  
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    section h2 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+    .note{
+      font-size: 18px;
+    }
+    .getin{
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        form label {
+            font-weight: bold;
+        }
+        form input, form textarea, form button {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+        form input:focus, form textarea:focus {
+            border-color: #002147;
+        }
+        form button {
+            background-color: #f2f3f5;
+            color: #000000;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            background-color: #a4e8b4;
+        }
+        .contact-details {
+            margin-top: 20px;
+        }
+        .contact-details p {
+            margin: 5px 0;
+        }
+        
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>EternaVista Events</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="event.html">Events</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <div class="hero">
+    <h1>Elevate Your Events</h1>
+    <p>We create memorable experiences for you and your guests.</p>
+    <a href="#" class="btn1">Learn More</a>
+  </div>
+
+  <main>
+    <section>
+      <h2>Upcoming Events</h2>
+      <p>Check out our list of upcoming events:</p>
+      <ul>
+        <li class="note"><b>Celebrating Victory: Donald Trump’s Historic Campaign Success
+          </b> - <small>Celebratying Liberty Grand Convention Centre
+          A grand and elegant space symbolizing America's strength and unity, located in a central metropolitan area for maximum. <br>Unite under a shared vision for America's greatness. Join us as we celebrate victory and pave the way forward for a brighter future.</small></li><br>
+        <li class="note"><b>Global Unity: Celebrating Prime Minister Narendra Modi’s Birthday</b> - <small>Venue: Lotus Grandeur Hall, Houston <br>
+          A grand celebration honoring Indian Prime Minister Narendra Modi’s vision and leadership. Join us in recognizing his contributions to global unity and India’s progress while fostering stronger bonds between nations.</small></li><br>
+        <li class="note"><b>Defenders of Freedom: A Salute to Patriotism</b> - <small>Venue: Stars and Stripes Ballroom, Washington. <br>
+          A stirring celebration of American values and achievements, honoring those who embody the spirit of liberty and freedom. Together, let’s inspire a brighter tomorrow.</small></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>About Us</h2>
+      <p>At EternaVista Events, we specialize in creating unforgettable experiences that celebrate milestones, achievements, and visionary leadership. With a passion for excellence and attention to detail, we craft events that inspire, unite, and leave a lasting impact. <br>Our team combines creativity, precision, and a deep understanding of diverse cultural and professional landscapes to deliver events that resonate with audiences worldwide. From grand galas and global celebrations to intimate gatherings and corporate milestones, we are committed to turning every occasion into a story worth sharing. <br></p>
+   
+    <div class="row">
+      <div class="column">
+        <img src="DALL·E 2024-11-16 16.44.20 - A grand and elegant event space decorated for a corporate celebration. The venue features high ceilings, chandeliers, and luxurious decor in gold and .webp" alt="Forest" style="width:100%" height="50%">
+      </div>
+      <div class="column">
+        <img src="a beautiful wedding decoration photo with flowers, using white and olive green colors for a website background.png" alt="Snow" style="width:100%" height="50%">
+      </div>
+      <div class="column">
+        <img src="DALL·E 2024-11-16 16.45.09 - A sophisticated indoor event hall designed for a high-profile corporate gathering. The venue features sleek, modern architecture with floor-to-ceiling.webp" alt="Mountains" style="width:100%">
+      </div>
+    </div>
+    <p>Driven by innovation and a commitment to excellence, EternaVista Events transforms visions into reality, ensuring that every event is as unique as the people and organizations we celebrate. Let us bring your dreams to life—one extraordinary event at a time.</p><br>
+  </section>
+  <section class="getin">
+    <h2>Get in Touch</h2>
+    <p>We’d love to hear from you! Fill out the form below or use the contact details provided to reach out to us.</p>
+
+    <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+</section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 EternaVista Events All rights reserved.</p>
+  </footer>
+</body>
+</html>
